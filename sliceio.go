@@ -51,7 +51,7 @@ func (rw *Wrapper) Head() []byte { return rw.slice[:rw.offset] }
 // Rest returns a slice of the content from the offset (inclusive) onward.
 func (rw *Wrapper) Rest() []byte { return rw.slice[rw.offset:] }
 
-// Cap returns the capacity of the IO, that is, the length
+// Cap returns the capacity of the wrapper, that is, the length
 // of its underlying slice.
 func (rw *Wrapper) Cap() int { return len(rw.slice) }
 
